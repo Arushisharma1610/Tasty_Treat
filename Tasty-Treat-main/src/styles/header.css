@@ -1,0 +1,219 @@
+.header {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+}
+
+.logo {
+  text-align: center;
+}
+.logo img {
+  width: calc(100% - 60%);
+  object-fit: contain;
+  margin-top: -40px;
+}
+
+.logo h5 {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #212245;
+  margin-top: -40px;
+  margin-bottom: 0;
+}
+
+.menu a {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #212245;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #df2020;
+}
+
+.active__menu {
+  color: #df2020 !important;
+}
+
+.cart__icon i,
+.user i,
+.mobile__menu i {
+  font-size: 1.3rem;
+  color: #212245;
+  cursor: pointer;
+}
+
+.cart__icon {
+  position: relative;
+}
+
+.cart__badge {
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  background: #df2020;
+  color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile__menu {
+  font-weight: 600;
+  display: none;
+}
+
+.header__shrink {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 99999;
+  box-shadow: 5px 5px 15px -5px #fde4e4;
+}
+
+@media only screen and (max-width: 992px) {
+  .logo img {
+    width: calc(100% - 70%);
+  }
+  .logo h5 {
+    font-size: 0.8rem;
+    margin-top: -15px;
+  }
+
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.425);
+    z-index: 99;
+    display: none;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    line-height: 20px;
+  }
+
+  .menu a {
+    font-size: 0.9rem;
+  }
+
+  .mobile__menu {
+    display: block;
+  }
+
+  .cart__icon i,
+  .user i,
+  .mobile__menu i {
+    font-size: 1rem;
+  }
+
+  .show__menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+  }
+
+  .logo img {
+    margin-top: -70px !important;
+  }
+  .logo h5 {
+    margin-top: -55px;
+  }
+}
+
+
+/* .user__menu{
+  position: relative;
+}
+
+.user__menu__options{
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+/* New User Menu Styles */
+.user {
+  position: relative;
+}
+
+.user__menu {
+  position: relative;
+}
+
+.user__menu__options {
+  /* display: none; Hide by default */
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #de4e4e;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 8px;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 1000;
+  width: 150px; /* Adjust width if needed */
+}
+
+.user__menu__options button {
+  border: none;
+  background: none;
+  padding: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px; /* Adjust font size if needed */
+  width: 100%;
+  text-align: left;
+  color: #ddd;
+}
+
+.user__menu__options button:hover {
+  background-color: #c63b3b;
+}
+
+/* Show menu options when user clicks on the icon */
+.user__menu.active .user__menu__options {
+  display: flex;
+}
+
+.user-icon {
+  font-size: 1.5rem; /* Adjust size as needed */
+  color: #212245;  /* Adjust color as needed */
+  cursor: pointer;
+  transition: color 0.3s ease; /* Add a transition effect */
+}
+
+.user-icon:hover {
+  color: #df2020; /* Change color on hover */
+}

@@ -1,0 +1,31 @@
+/* Make sure to include this in your order.css file */
+.order {
+    display: flex; /* Use Flexbox for horizontal alignment */
+    align-items: center; /* Vertically center items if needed */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Optional: Adds space between the h2 and the button */
+    flex-direction: column; /* Stack the elements vertically */
+    margin-top: 100px; /* Top margin */
+    margin-bottom: 200px; /* Bottom margin */
+  }
+  
+  .ordr-btn {
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Button font size */
+    background-color: #ff2600; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    
+  }
+
+  .ordr-btn:hover {
+    background-color: #b3003f; /* Darker background color on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+  }
+  
+  h2 {
+    margin: 0; /* Remove default margin */
+  }
+  
