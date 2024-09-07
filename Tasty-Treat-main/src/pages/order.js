@@ -1,19 +1,4 @@
-// import React from 'react'
-// import "../styles/order.css"
 
-// const order = () => {
-//   return (
-//     <div className='order'>
-//     <h2>Order Successful</h2>
-//     <button className='ordr-btn'>
-//       Download Receipt
-//     </button>
-
-//     </div>
-//   )
-// }
-
-// export default order
 
 import React from 'react';
 import { useSelector } from 'react-redux';
